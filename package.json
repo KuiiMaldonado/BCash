@@ -1,0 +1,20 @@
+{
+  "name": "bcash",
+  "version": "1.0.0",
+  "description": "BCash is an app to help you keep track of who you owe and who owes you money in an easy way. Split your tabs and more.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KuiiMaldonado/BCash.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KuiiMaldonado/BCash/issues"
+  },
+  "homepage": "https://github.com/KuiiMaldonado/BCash#readme"
+}
