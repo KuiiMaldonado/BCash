@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/KuiiMaldonado/BCash/issues"
   },
-  "homepage": "https://github.com/KuiiMaldonado/BCash#readme"
+  "homepage": "https://github.com/KuiiMaldonado/BCash#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "sequelize": "^6.21.0"
+  }
 }
