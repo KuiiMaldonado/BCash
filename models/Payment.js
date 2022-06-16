@@ -52,6 +52,12 @@ Payment.init(
                 key: 'listId',
             },
         },
+    },
+    {
+        sequelize,
+        timestamps: false,
+        modelName: 'payment',
+        underscored: false,
     }
 );
 
