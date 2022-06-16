@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/KuiiMaldonado/BCash#readme",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "dotenv": "^16.0.1",
     "sequelize": "^6.21.0"
   }
