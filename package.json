@@ -20,6 +20,7 @@
   "dependencies": {
     "bcrypt": "^5.0.1",
     "dotenv": "^16.0.1",
-    "sequelize": "^6.21.0"
+    "sequelize": "^6.21.0",
+    "uuid": "^8.3.2"
   }
 }
