@@ -58,6 +58,7 @@ Payment.init(
         timestamps: false,
         modelName: 'payment',
         underscored: false,
+        freezeTableName: true,
     }
 );
 

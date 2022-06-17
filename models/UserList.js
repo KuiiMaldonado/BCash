@@ -35,6 +35,7 @@ UserList.init(
         timestamps: false,
         underscored: false,
         modelName: 'user_list',
+        freezeTableName: true,
     },
 );
 

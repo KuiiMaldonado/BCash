@@ -32,6 +32,7 @@ List.init(
         timestamps: false,
         modelName: 'list',
         underscored: false,
+        freezeTableName: true,
     }
 );
 
