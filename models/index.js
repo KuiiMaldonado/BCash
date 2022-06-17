@@ -7,10 +7,6 @@ Payment.hasOne(List, {
     foreignKey: 'listId',
 });
 
-List.belongsToMany(User, {through: UserList});
-
-User.belongsToMany(List, {through: UserList});
-
 module.exports = {
     User,
     Payment,

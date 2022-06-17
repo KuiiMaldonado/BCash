@@ -24,7 +24,7 @@ Payment.init(
                 isDecimal: true
             }
         },
-        creditor: {
+        creditorId: {
             type: DataTypes.INTEGER,
             allowNull: false,
             references: {
@@ -32,7 +32,7 @@ Payment.init(
                 key: 'userId',
             },
         },
-        debtor: {
+        debtorId: {
             type: DataTypes.INTEGER,
             allowNull: false,
             references: {
