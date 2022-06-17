@@ -1,4 +1,5 @@
 const seedUsers = require('./user-seeds');
+const seedLists = require('./list_seeds');
 const sequelize = require('../config/connection');
 
 const seedAll = async () => {
@@ -6,7 +7,8 @@ const seedAll = async () => {
     console.log('----- DATABASE SYNCED -----');
     await seedUsers();
     console.log('----- USER SEEDED -----')
-
+    await seedLists();
+    console.log('----- LIST SEEDED -----')
     process.exit(0);
 };
 
