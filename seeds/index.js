@@ -1,5 +1,6 @@
 const seedUsers = require('./user-seeds');
 const seedLists = require('./list_seeds');
+const seedPayments = require('./payment-seeds');
 const sequelize = require('../config/connection');
 
 const seedAll = async () => {
@@ -9,6 +10,8 @@ const seedAll = async () => {
     console.log('----- USER SEEDED -----')
     await seedLists();
     console.log('----- LIST SEEDED -----')
+    await seedPayments();
+    console.log('----- PAYMENT SEEDED -----')
     process.exit(0);
 };
 

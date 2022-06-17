@@ -24,11 +24,6 @@ List.init(
     },
     {
         hooks: {
-            beforeBulkCreate(newLists) {
-                for (const list of newLists) {
-                    list.dataValues.listId = uuid.v4();
-                }
-            },
             beforeCreate(newListData) {
                 newListData.listId = uuid.v4();
             },
