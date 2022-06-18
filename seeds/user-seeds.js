@@ -7,6 +7,7 @@ const usersData = [
         email: 'cuitlahuac@email.com',
         firstName: 'Cuitlahuac',
         lastName: 'Maldonado',
+        accountNumber: '123456789012345678'
     },
     {
         username: 'DanielLago',
@@ -14,6 +15,7 @@ const usersData = [
         email: 'lago@email.com',
         firstName: 'Daniel',
         lastName: 'Lago',
+        accountNumber: '098765432109874651'
     },
     {
         username: 'AlexisGarcia',
@@ -21,6 +23,7 @@ const usersData = [
         email: 'alexis@email.com',
         firstName: 'Alexis',
         lastName: 'Garcia',
+        accountNumber: '154896321475120345'
     },
     {
         username: 'CaroTaboada',
@@ -28,6 +31,7 @@ const usersData = [
         email: 'carolina@email.com',
         firstName: 'Carolina',
         lastName: 'Taboada',
+        accountNumber: '154789635412548795'
     },
     {
         username: 'EdwinSimpson',
@@ -35,6 +39,7 @@ const usersData = [
         email: 'edwin@email.com',
         firstName: 'Edwin',
         lastName: 'Simpson',
+        accountNumber: '357951258456789451'
     },
 ];
 
