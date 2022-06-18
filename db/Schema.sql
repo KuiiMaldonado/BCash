@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS bcash_db;
+CREATE DATABASE bcash_db;

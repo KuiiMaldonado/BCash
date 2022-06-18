@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/KuiiMaldonado/BCash/issues"
   },
-  "homepage": "https://github.com/KuiiMaldonado/BCash#readme"
+  "homepage": "https://github.com/KuiiMaldonado/BCash#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.21.0",
+    "uuid": "^8.3.2"
+  }
 }
