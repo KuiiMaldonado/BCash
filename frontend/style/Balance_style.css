@@ -1,0 +1,14 @@
+.navbar {
+    background-color: rgb(105, 154, 239);
+}
+
+.btn {
+    outline: auto;
+    outline-color: black;
+    color: black;
+}
+
+.btn :hover {
+    background-color: rgb(0, 115, 255);
+    color: azure;
+}
