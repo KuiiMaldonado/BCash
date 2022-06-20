@@ -1,13 +1,14 @@
 const router = require('express').Router();
 const {Payment} = require('../../models');
+const authenticateToken = require('../../utils/helpers');
 
 //Create new payment
-router.post('/', async (req, res) => {
+router.post('/', authenticateToken, async (req, res) => {
    try {
        const newPayment = await Payment.create( {
            description: req.body.description,
            amount: req.body.amount,
-           creditorId: jwt.userID, //TODO get userId from cookie/session/jwt
+           creditorId: req.user.userId,
            debtorId: req.body.debtorId,
            isPayed: false,
            listId: req.body.listId,
