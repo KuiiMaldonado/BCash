@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const {User} = require('../../models');
+const jwt = require('jsonwebtoken');
 
 //Create new user
 router.post('/', async (req, res) => {
@@ -38,7 +39,10 @@ router.post('/login', async (req, res) => {
             return;
         }
 
-        res.status(200).json({message: 'Login successful!'})
+        const userData = dbUser.toJSON();
+        console.log(userData);
+        const accessToken = jwt.sign(userData, process.env.ACCESS_TOKEN_SECRET)
+        res.status(200).json({accessToken: accessToken, message: 'Login successful!'})
 
     }catch (error) {
         console.log(error);
