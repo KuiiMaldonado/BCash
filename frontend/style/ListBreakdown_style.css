@@ -1,18 +1,25 @@
 body {
     font-family: Montserrat, sans-serif;
+    background-color: rgb(255, 255, 255);
+    color: white;
 }
 
 .navbar {
     background-color: rgb(105, 154, 239);
+    color: grey;
 }
 
-.btn {
-    outline: auto;
-    outline-color: black;
-    color: black;
+
+.dropdownMenuButton{
+    flex: auto;
+    margin-top: 3%;
+    background-color: rgb(105, 154, 239);
+    border-style: none;
+    color: grey;
 }
 
-.btn :hover {
-    background-color: rgb(0, 115, 255);
+.dropdownMenuButton:hover {
+    background-color: rgb(58, 58, 82);
     color: azure;
 }
+

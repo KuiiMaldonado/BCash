@@ -4,18 +4,26 @@ body {
     font-family: Montserrat, sans-serif;
 }
 
-
 .navbar {
     background-color: rgb(105, 154, 239);
 }
 
-.btn {
-    outline: auto;
-    outline-color: black;
-    color: black;
+.dropdownMenuButton{
+    flex: auto;
+    margin-top: 3%;
+    background-color: rgb(105, 154, 239);
+    border-style: none;
+    color: rgb(61, 61, 61);
 }
 
-.btn :hover {
-    background-color: rgb(0, 115, 255);
+.dropdownMenuButton:hover {
+    background-color: rgb(74, 113, 240);
     color: azure;
+}
+
+.balance {
+    border: 2vh;
+    border-radius: 1rem;
+    border-color: grey;
+    box-shadow: 1rem;
 }

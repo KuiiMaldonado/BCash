@@ -6,13 +6,20 @@ body {
     background-color: rgb(105, 154, 239);
 }
 
-.btn {
-    outline: auto;
-    outline-color: black;
-    color: black;
+.dropdownMenuButton{
+    flex: auto;
+    margin-top: 3%;
+    background-color: rgb(105, 154, 239);
+    border-style: none;
+    color: rgb(61, 61, 61);
 }
 
-.btn :hover {
-    background-color: rgb(0, 115, 255);
+.dropdownMenuButton:hover {
+    background-color: rgb(74, 113, 240);
     color: azure;
+}
+
+.cover-container {
+    background-color: black;
+    color: white;
 }
