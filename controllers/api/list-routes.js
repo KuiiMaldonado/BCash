@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {List, UserList, Payment} = require('../../models');
+const {List, UserList, Payment, User} = require('../../models');
 const authenticateToken = require('../../utils/helpers');
 const sequelize = require('../../config/connection');
 const {Sequelize} = require("sequelize");
@@ -50,6 +50,19 @@ router.get('/balance', authenticateToken, async (req, res) => {
         const balance = medeben[0].medeben - lesdebo[0].lesdebo;
         res.status(200).json({balance: balance});
     }catch (error) {
+        console.log(error);
+        res.status(500).json(error);
+    }
+});
+
+router.post('/adduser', authenticateToken, async (req, res) => {
+    try {
+        const newUserList = await UserList.create( {
+            userId: req.body.userId,
+            listId: req.body.listId,
+        });
+        res.status(200).json(newUserList);
+    } catch (error) {
         console.log(error);
         res.status(500).json(error);
     }
