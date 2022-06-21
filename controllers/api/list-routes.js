@@ -21,7 +21,6 @@ router.post('/', authenticateToken, async (req, res) => {
    }
 });
 
-//TODO deudas(medeben) - lo que me deben(lesdebo) - balance
 router.get('/medeben', authenticateToken, async (req, res) => {
     try {
         const [lists] = await sequelize.query(`select distinct listId from payment where creditorId = ${req.user.userId};`);

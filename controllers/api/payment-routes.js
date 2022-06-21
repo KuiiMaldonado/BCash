@@ -20,4 +20,18 @@ router.post('/', authenticateToken, async (req, res) => {
    }
 });
 
+router.get('/listpayments/:id', authenticateToken, async (req, res) => {
+    try {
+        const payments = await Payment.findAll( {
+            where: {
+                listId: req.params.id,
+            },
+        });
+        res.status(200).json(payments);
+    } catch (error) {
+        console.log(error);
+        res.status(500).json(error);
+    }
+});
+
 module.exports = router;
