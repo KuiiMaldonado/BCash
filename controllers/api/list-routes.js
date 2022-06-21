@@ -2,6 +2,7 @@ const router = require('express').Router();
 const {List, UserList, Payment} = require('../../models');
 const authenticateToken = require('../../utils/helpers');
 const sequelize = require('../../config/connection');
+const {Sequelize} = require("sequelize");
 
 //Create new list
 router.post('/', authenticateToken, async (req, res) => {
@@ -38,6 +39,18 @@ router.get('/lesdebo', authenticateToken, async (req, res) => {
         console.log(lists);
         res.status(200).json(lists);
     } catch (error) {
+        console.log(error);
+        res.status(500).json(error);
+    }
+});
+
+router.get('/balance', authenticateToken, async (req, res) => {
+    try {
+        const [medeben] = await sequelize.query(`select sum(amount) as medeben from payment where creditorId = ${req.user.userId};`)
+        const [lesdebo] = await sequelize.query(`select sum(amount) as lesdebo from payment where debtorId = ${req.user.userId};`)
+        const balance = medeben[0].medeben - lesdebo[0].lesdebo;
+        res.status(200).json({balance: balance});
+    }catch (error) {
         console.log(error);
         res.status(500).json(error);
     }
