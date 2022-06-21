@@ -2,7 +2,6 @@ const router = require('express').Router();
 const {List, UserList, Payment, User} = require('../../models');
 const authenticateToken = require('../../utils/helpers');
 const sequelize = require('../../config/connection');
-const {Sequelize} = require("sequelize");
 
 //Create new list
 router.post('/', authenticateToken, async (req, res) => {
