@@ -1,24 +1,24 @@
 /* Add front end CSS style here */
 
 :root {
-    --darkGreen: #062C30;
-    --paleGreen: #05595B;
-    --paleYellow: #E2D784;
-    --paleCream: #F5F5F5;
+    --blue1: #051367;
+    --blue2: #5D8BF4;
+    --lightBlue: #DFF6FF;
+    --green1: #A3DA8D;
 }
 
 body {
-    background-color: var(--paleCream) !important;
+    background-color: var(--lightBlue) !important;
 }
 
 header {
     display: flex;
     justify-content: center;
-    background-color: var(--paleGreen);
+    background-color: var(--blue1);
 }
 
 header h1 {
     font-size: 4rem;
-    color: var(--paleCream);
+    color: var(--green1);
     margin-top: 1rem;
 }
