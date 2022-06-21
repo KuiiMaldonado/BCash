@@ -10,6 +10,10 @@ router.use('/api', apiRoutes);
 
 router.get('/',  (req,res) => {
     res.render('main')
-})
+});
+
+router.get('/test',  (req,res) => {
+    res.send('test')
+});
 
 module.exports = router;
