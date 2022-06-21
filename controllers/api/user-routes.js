@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const {User} = require('../../models');
 const jwt = require('jsonwebtoken');
+const authenticateToken = require('../../utils/helpers');
 
 //Create new user
 router.post('/', async (req, res) => {
@@ -40,11 +41,24 @@ router.post('/login', async (req, res) => {
         }
 
         const userData = dbUser.toJSON();
-        console.log(userData);
         const accessToken = jwt.sign(userData, process.env.ACCESS_TOKEN_SECRET)
         res.status(200).json({accessToken: accessToken, message: 'Login successful!'})
 
     }catch (error) {
+        console.log(error);
+        res.status(500).json(error);
+    }
+});
+
+router.get('/findbyemail/:email', authenticateToken, async (req, res) => {
+    try {
+        const user = await User.findOne( {
+            where: {
+                email: req.params.email,
+            },
+        });
+        res.status(200).json(user);
+    } catch (error) {
         console.log(error);
         res.status(500).json(error);
     }
