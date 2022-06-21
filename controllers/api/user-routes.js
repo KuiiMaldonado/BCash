@@ -40,7 +40,6 @@ router.post('/login', async (req, res) => {
         }
 
         const userData = dbUser.toJSON();
-        console.log(userData);
         const accessToken = jwt.sign(userData, process.env.ACCESS_TOKEN_SECRET)
         res.status(200).json({accessToken: accessToken, message: 'Login successful!'})
 
