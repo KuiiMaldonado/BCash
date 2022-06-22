@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-const list = require('../models/List');
+const List = require('../models/List');
 const Payment = require('../models/Payment');
 const User = require('../models/User');
 const UserList = require('../models/UserList');
@@ -13,12 +13,15 @@ router.get('/balance',  (req,res) => {
     res.render('balance')
 });
 
-router.get('/listBreakdown',  (req,res) => {
-    res.render('listBreakdown')
+router.get('/listBreakdown', async (req,res) => {
+    const paymentData = await Payment.findAll();
+    console.log(paymentData)
+    const payments = paymentData.map((user) => user.get({ plain: true}));
+    res.render('listBreakdown', { payments })
 });
 
 router.get('/lists',  async (req,res) => {
-    const listsData = await User.findAll();
+    const listsData = await List.findAll();
     console.log(listsData)
     const lists = listsData.map((user) => user.get({ plain: true}));
     res.render('lists', { lists })
@@ -27,7 +30,6 @@ router.get('/lists',  async (req,res) => {
 router.get('/login',  (req,res) => {
     res.render('login')
 });
-
 
 router.get('/users',  async (req,res) => {
     const userData = await User.findAll();

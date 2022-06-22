@@ -2,8 +2,25 @@
 
 <h1>List title</h1>
 
+<div class="paymentTemplate">
+{{#each payments as |payment|}}
+
+    <div class="paymentidTemplate">
+    {{payment.paymentId}}
+    </div> 
+     <div class="descriptionTemplate">
+    {{payment.description}}
+    </div> 
+     <div class="amountTemplate">
+    {{payment.amount}}
+    </div> 
+    
+{{/each}}
+
 <button id="addPaymentBtn">Add payment</button>
 <button id="addPurchaseBtn">Add purchase</button>
 
 
 <button>Back</button>
+</div>
+
