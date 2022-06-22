@@ -17,8 +17,11 @@ router.get('/listBreakdown',  (req,res) => {
     res.render('listBreakdown')
 });
 
-router.get('/lists',  (req,res) => {
-    res.render('lists')
+router.get('/lists',  async (req,res) => {
+    const listsData = await User.findAll();
+    console.log(listsData)
+    const lists = listsData.map((user) => user.get({ plain: true}));
+    res.render('lists', { lists })
 });
 
 router.get('/login',  (req,res) => {
