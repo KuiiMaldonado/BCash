@@ -12,6 +12,10 @@ router.get('/',  (req,res) => {
     res.render('main')
 });
 
+router.get('/userInfo',  (req,res) => {
+    res.render('userInfo')
+});
+
 router.get('/test',  (req,res) => {
     res.send('test')
 });
