@@ -26,8 +26,10 @@ router.get('/login',  (req,res) => {
 });
 
 
-router.get('/user',  (req,res) => {
-    res.render('user')
+router.get('/user',  async (req,res) => {
+    const userData = await User.findAll();
+    console.log(userData)
+    
 });
 
 router.get('/userInfo',  (req,res) => {
