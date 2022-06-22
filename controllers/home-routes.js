@@ -17,8 +17,11 @@ router.get('/listBreakdown',  (req,res) => {
     res.render('listBreakdown')
 });
 
-router.get('/lists',  (req,res) => {
-    res.render('lists')
+router.get('/lists',  async (req,res) => {
+    const listsData = await User.findAll();
+    console.log(listsData)
+    const lists = listsData.map((user) => user.get({ plain: true}));
+    res.render('lists', { lists })
 });
 
 router.get('/login',  (req,res) => {
@@ -26,8 +29,11 @@ router.get('/login',  (req,res) => {
 });
 
 
-router.get('/user',  (req,res) => {
-    res.render('user')
+router.get('/users',  async (req,res) => {
+    const userData = await User.findAll();
+    console.log(userData)
+    const users = userData.map((user) => user.get({ plain: true}));
+    res.render('users', { users })
 });
 
 router.get('/userInfo',  (req,res) => {

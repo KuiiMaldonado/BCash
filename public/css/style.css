@@ -1,24 +1,168 @@
 /* Add front end CSS style here */
 
 :root {
-    --blue1: #051367;
-    --blue2: #5D8BF4;
-    --lightBlue: #DFF6FF;
-    --green1: #A3DA8D;
+    --darkGreen: #062C30;
+    --paleGreen: #05595B;
+    --paleYellow: #E2D784;
+    --paleCream: #F5F5F5;
 }
 
-body {
-    background-color: var(--lightBlue) !important;
-}
 
 header {
     display: flex;
     justify-content: center;
-    background-color: var(--blue1);
+    background-color: var(--paleGreen);
+    padding-bottom: 2rem;
 }
 
 header h1 {
     font-size: 4rem;
-    color: var(--green1);
+    color: var(--paleCream);
     margin-top: 1rem;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--paleGreen);
+}
+
+.nav1 button {
+    margin: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 3rem;
+    background-color: var(--darkGreen);
+    color: #F66B0E;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.mainBack{
+    display: flex;
+    justify-content: center;
+}
+
+.main1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkGreen);
+    padding-bottom: 5rem;
+    width: 85%;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 5rem;
+}
+
+.main1All {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkGreen);
+    padding-bottom: 5rem;
+    width: 90%;
+}
+
+
+
+.main1All .blog {
+    background-color: var(--paleGreen);
+    font-size: 4rem;
+    margin: 2rem;
+    margin-top: 4rem;
+    width: 70%;
+    padding: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    color: var(--paleCream);
+    border-radius: 3rem;
+}
+
+#submitBtn {
+    margin: 2rem;
+    margin-bottom: 5rem;
+}
+
+.form-label {
+    margin: 2rem;
+    margin-top: 4rem;
+}
+
+#dash {
+    color: #F5F5F5;
+}
+
+#logInAccBtn {
+    margin: 2rem;
+    border-radius: 20%;
+    font-size: 2.5rem;
+    padding: 1rem;
+    background-color:#F66B0E;
+    font-weight: bold;
+    color: #F5F5F5;
+}
+
+#signUpAccBtn {
+    margin: 2rem;
+    border-radius: 20%;
+    font-size: 2.5rem;
+    padding: 1rem;
+    background-color:#F66B0E;
+    font-weight: bold;
+    color: var(--paleCream);
+}
+
+#commentBtn {
+    margin: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background-color:#F66B0E;
+    font-weight: bold;
+}
+
+#input1 {
+    font-size: 2.5rem;
+    width: 100%;
+    border-radius: 0.2rem;
+}
+
+#input2 {
+    font-size: 2.5rem;
+    width: 100%;
+    border-radius: 0.2rem;
+}
+
+#author {
+    font-size: 3.5rem;
+    color: #F66B0E;
+}
+
+#content {
+    font-size: 2.5rem;
+}
+
+.userTemplate {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.firstNameTemplate{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.lastNameTemplate{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
