@@ -26,10 +26,11 @@ router.get('/login',  (req,res) => {
 });
 
 
-router.get('/user',  async (req,res) => {
+router.get('/users',  async (req,res) => {
     const userData = await User.findAll();
     console.log(userData)
-    
+    const users = userData.map((user) => user.get({ plain: true}));
+    res.render('users', { users })
 });
 
 router.get('/userInfo',  (req,res) => {
