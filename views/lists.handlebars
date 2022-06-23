@@ -1,8 +1,8 @@
-<h1>Lists</h1>
-
 <div class="mainBack">
   <div class="main1">
-
+<div class="listHeader">
+  <h1>All lists</h1>
+</div>
 <div class="listTemplate">
 {{#each lists as |list|}}
 
@@ -13,8 +13,7 @@
 {{/each}}
 
 <div class="mb-3">
-        <label for="Input4" class="form-label">List name</label>
-        <input type="string" class="form-control" id="Input" placeholder="List name" name="listname">
+        <input type="string" class="form-control" id="listInput" placeholder="New list name" name="listname">
     </div>
 
 <button id="addListBtn">Add list</button>
@@ -22,3 +21,5 @@
 </div>
 </div>
 </div>
+
+<script src="./js/lists.js"></script>

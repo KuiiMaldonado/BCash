@@ -10,9 +10,9 @@ router.post('/', async (req, res) => {
             username: req.body.username,
             password: req.body.password,
             email: req.body.email,
-            firstName: req.body.firstName,
-            lastName: req.body.lastName,
-            accountNumber: req.body.accountNumber,
+            // firstName: req.body.firstName,
+            // lastName: req.body.lastName,
+            // accountNumber: req.body.accountNumber,
         });
         res.status(200).json(newUser);
     }catch (error) {
