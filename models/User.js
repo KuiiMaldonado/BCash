@@ -36,7 +36,7 @@ User.init(
                 isEmail: true,
             },
         },
-        firstName: {
+        /*firstName: {
             type: DataTypes.STRING,
             allowNull: false,
         },
@@ -47,7 +47,7 @@ User.init(
         accountNumber: {
             type: DataTypes.STRING,
             allowNull: false,
-        }
+        }*/
     },
     {
         hooks: {
