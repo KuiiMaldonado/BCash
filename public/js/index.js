@@ -3,6 +3,7 @@
 const homeBtn = document.querySelector('#homeBtn');
 const dashBtn = document.querySelector('#dashBtn');
 const loginBtn = document.querySelector('#loginBtn');
+const activeBtn = document.querySelector('#activeBtn');
 const signupBtn = document.querySelector('#signupBtn');
 
 homeBtn.addEventListener('click', () => {
@@ -18,5 +19,9 @@ loginBtn.addEventListener('click', () => {
 });
 
 signupBtn.addEventListener('click', () => {
+    console.log('Sign up button')
+})
+
+activeBtn.addEventListener('click', () => {
     console.log('Sign up button')
 })
