@@ -1,10 +1,7 @@
-<h1>Current list</h1>
-
-<h1>List title</h1>
 
 <div class="mainBack">
   <div class="main1">
-
+    <h1 id="alist">Active list</h1>
 <div class="paymentHeader">
   <h1>Payment Id</h1>
   <h1>Payment Description</h1>
@@ -32,17 +29,19 @@
     
 {{/each}}
 
+<div class="paymentInputFields">
 <div class="mb-3">
-        <label for="Input3" class="form-label">Paymnt decription</label>
-        <input type="text" class="form-control" id="paymentInput" placeholder="Description" name="description">
+        <label for="Input3" class="form-label">Payment description</label>
+        <input type="email" class="form-control" id="paymentInput" placeholder="Description" name="username">
     </div>
     <div class="mb-3">
         <label for="Input3" class="form-label">Amount</label>
-        <input type="text" class="form-control" id="amountInput" placeholder="Amount" name="amount">
+        <input type="email" class="form-control" id="amountInput" placeholder="$" name="username">
     </div>
     <div class="mb-3">
         <label for="Input3" class="form-label">Other</label>
-        <input type="text" class="form-control" id="debtorInput" placeholder="Debtor" name="debtor">
+        <input type="email" class="form-control" id="debtorInput" placeholder="other" name="username">
+    </div>
     </div>
 
 <button id="addPaymentBtn">Add payment</button>
