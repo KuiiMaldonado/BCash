@@ -2,8 +2,40 @@
 
 <h1>List title</h1>
 
-<button>Add payment</button>
-<button>Add purchase</button>
+<div class="mainBack">
+  <div class="main1">
 
+<div class="paymentHeader">
+  <h1>Payment Id</h1>
+  <h1>Payment Description</h1>
+  <h1>Amount</h1>
+  <h1>Is payed</h1>
+</div>
+<div class="paymentTemplate">
+{{#each payments as |payment|}}
 
-<button>Back</button>
+  <div class="paymentBlock">
+    <div class="paymentidTemplate">
+    {{payment.paymentId}}
+    </div> 
+     <div class="descriptionTemplate">
+    {{payment.description}}
+    </div> 
+     <div class="amountTemplate">
+    {{payment.amount}}
+    </div>
+    <div class="isPayedTemplate">
+    {{payment.isPayed}}
+    </div>
+    </div> 
+   
+    
+{{/each}}
+
+<button id="addPaymentBtn">Add payment</button>
+<button id="addPurchaseBtn">Add purchase</button>
+
+</div>
+</div>
+</div>
+
