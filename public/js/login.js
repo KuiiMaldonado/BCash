@@ -36,7 +36,6 @@ async function signUpFormHandler(event) {
         headers: { 'Content-Type': 'application/json' },
     });
 
-    const responseData = await response.json();
     if (response.ok) {
         window.location.replace('/login');
     }
