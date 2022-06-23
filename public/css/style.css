@@ -245,19 +245,60 @@ header h1 {
 .paymentidTemplate{
     font-size: 2rem;
     color: #F5F5F5;
+    margin: 1rem;
 }
 
 .descriptionTemplate{
     font-size: 2rem;
     color: #F5F5F5;
+    margin: 1rem;
 }
 
 .amountTemplate{
     font-size: 2rem;
     color: #F5F5F5;
+    margin: 1rem;
 }
+
+.isPayedTemplate {
+    font-size: 2rem;
+    color: #F5F5F5;
+    margin: 1rem;
+}
+
 
 .titleTemplate {
     font-size: 2rem;
     color: #F5F5F5;
+    margin: 1rem;
+}
+
+.paymentTemplate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    width: 80%;
+}
+
+.paymentBlock{
+    display: flex;
+    justify-content: space-between;
+    background-color: #05595B;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.paymentHeader {
+    display: flex;
+    justify-content: space-between;
+    background-color: #05595B;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #F66B0E;
+    width: 80%;
 }

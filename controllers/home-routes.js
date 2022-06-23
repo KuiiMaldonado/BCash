@@ -38,7 +38,13 @@ router.get('/users',  async (req,res) => {
     res.render('users', { users })
 });
 
-router.get('/userInfo',  (req,res) => {
+router.get('/userInfo/user', async  (req,res) => {
+    const usersInfo = await User.findAll();
+    const userData = usersInfo.map((user) => user.get({ plain: true}));
+    res.render('userInfo', { userData })
+});
+
+router.get('/userInfo/', (req,res) => {
     res.render('userInfo')
 });
 
