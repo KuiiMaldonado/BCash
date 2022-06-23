@@ -38,7 +38,6 @@ async function signUpFormHandler(event) {
 
     const responseData = await response.json();
     if (response.ok) {
-        localStorage.setItem('accessToken', responseData.accessToken);
         window.location.replace('/login');
     }
     else {
