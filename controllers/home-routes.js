@@ -31,11 +31,8 @@ router.get('/login',  (req,res) => {
     res.render('login')
 });
 
-router.get('/users',  async (req,res) => {
-    const userData = await User.findAll();
-    console.log(userData)
-    const users = userData.map((user) => user.get({ plain: true}));
-    res.render('users', { users })
+router.get('/main',  async (req,res) => {
+    res.render('main')
 });
 
 router.get('/userInfo/user', async  (req,res) => {
