@@ -220,6 +220,7 @@ header h1 {
     background-color:#F66B0E;
     font-weight: bold;
     color: #F5F5F5;
+    width: 15%;
 }
 
 #listsAccBtn {
@@ -301,4 +302,92 @@ header h1 {
     border-radius: 1rem;
     color: #F66B0E;
     width: 80%;
+    margin-top: 5rem;
+} 
+
+#paymentInput {
+    font-size: 2.5rem;
+    width: 100%;
+    border-radius: 0.2rem;
+}
+
+#amountInput {
+    font-size: 2.5rem;
+    width: 100%;
+    border-radius: 0.2rem;
+}
+
+#otherInput{
+    font-size: 2.5rem;
+    width: 100%;
+    border-radius: 0.2rem;
+}
+
+.paymentInputFields {
+    width: 90%;
+    background-color: #E2D784;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 3rem;
+}
+
+#alist {
+    color: #E2D784;
+    font-size: 4rem;
+    margin-top: 2rem;
+}
+
+.listHeader {
+    display: flex;
+    justify-content: center;
+    background-color: #05595B;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #E2D784;
+    width: 80%;
+    margin-top: 5rem;
+}
+
+.listTemplate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #05595B;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #E2D784;
+    width: 80%;
+    margin-top: 5rem;
+}
+
+.mb-3 #listInput {
+    font-size: 2rem;
+    width: 100%;
+    margin: 2rem;
+}
+
+.userI {
+    height: 80%;
+    width: 80%;
+    background-color: #05595B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3rem;
+}
+
+#usernameTemplate {
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+#balance {
+    font-size: 2.5rem;
+    margin: 2rem;
 }
