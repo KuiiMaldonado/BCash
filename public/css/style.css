@@ -521,14 +521,48 @@ header h1 {
     margin: 3rem;
     margin-top: 5rem;
     margin-left: 10rem;
-    animation: logo 5s linear alternate infinite;
+    
 }
 
-@keyframes logo {
+/* @keyframes logo {
     from {
         transform: scale(1);
     }
     to {
         transform: scale(1.5);
+    }
+} */
+
+#logoTitle1{
+    transition: 2s;
+    animation: logoTitle1A 2s linear alternate infinite 2s;
+    fill: #006838;
+}
+
+@keyframes logoTitle1A {
+    0%{
+        opacity: 1;
+        fill: #006838;
+    }
+    100%{
+        opacity: 1;
+        fill: white;
+    }
+}
+
+#logoTitle2{
+    transition: 2s;
+    animation: logoTitle2A 2s linear alternate infinite 2s;
+    fill: #006838;
+}
+
+@keyframes logoTitle2A {
+    0%{
+        opacity: 1;
+        fill: #006838;
+    }
+    100%{
+        opacity: 1;
+        fill: white;
     }
 }
