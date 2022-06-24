@@ -3,7 +3,7 @@ const addListBtn = document.getElementById('addListBtn');
 async function addListHandler(event) {
     event.preventDefault();
 
-    const title = document.querySelector('#Input').value;
+    const title = document.querySelector('#listInput').value;
 
     const response = await fetch('/api/lists', {
         method: 'POST',

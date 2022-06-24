@@ -15,14 +15,12 @@ router.get('/balance',  (req,res) => {
 
 router.get('/listBreakdown', async (req,res) => {
     const paymentData = await Payment.findAll();
-    console.log(paymentData)
     const payments = paymentData.map((user) => user.get({ plain: true}));
     res.render('listBreakdown', { payments })
 });
 
 router.get('/lists',  async (req,res) => {
     const listsData = await List.findAll();
-    console.log(listsData)
     const lists = listsData.map((user) => user.get({ plain: true}));
     res.render('lists', { lists })
 });
@@ -31,11 +29,8 @@ router.get('/login',  (req,res) => {
     res.render('login')
 });
 
-router.get('/users',  async (req,res) => {
-    const userData = await User.findAll();
-    console.log(userData)
-    const users = userData.map((user) => user.get({ plain: true}));
-    res.render('users', { users })
+router.get('/main',  async (req,res) => {
+    res.render('main')
 });
 
 router.get('/userInfo/user', async  (req,res) => {

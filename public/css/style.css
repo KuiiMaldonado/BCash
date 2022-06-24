@@ -11,7 +11,7 @@
 header {
     display: flex;
     justify-content: center;
-    background-color: var(--paleGreen);
+    background-color: #062C30;
     padding-bottom: 2rem;
 }
 
@@ -25,6 +25,8 @@ header h1 {
     display: flex;
     justify-content: space-between;
     background-color: var(--paleGreen);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .nav1 button {
@@ -33,9 +35,15 @@ header h1 {
     margin-right: 3rem;
     font-size: 3rem;
     background-color: var(--darkGreen);
-    color: #F66B0E;
+    color: #E2D784;
     border-radius: 1rem;
     padding: 1rem;
+    transition: 0.6s;
+}
+
+.nav1 button:hover {
+    background-color: #F66B0E;
+    transform: scale(1.15);
 }
 
 .mainBack{
@@ -105,6 +113,13 @@ header h1 {
     color: #F5F5F5;
 }
 
+#loginAccBtn:hover {
+    transition: 0.6s;
+    background-color: #E2D784;
+    transform: scale(1.15);
+    color: #062C30;
+}
+
 #signUpAccBtn {
     margin: 2rem;
     border-radius: 2rem;
@@ -115,13 +130,19 @@ header h1 {
     color: var(--paleCream);
 }
 
-
+#signUpAccBtn:hover {
+    transition: 0.6s;
+    background-color: #E2D784;
+    transform: scale(1.15);
+    color: #062C30;
+}
 
 
 #input1 {
     font-size: 2.5rem;
     width: 100%;
     border-radius: 0.2rem;
+    margin-top: 4rem;
 }
 
 #input2 {
@@ -192,6 +213,13 @@ header h1 {
     color: #F5F5F5;
 }
 
+#addPaymentBtn:hover {
+    transition: 0.6s;
+    background-color: #E2D784;
+    transform: scale(1.15);
+    color: #062C30;
+}
+
 #addPurchaseBtn {
     margin: 2rem;
     border-radius: 2rem;
@@ -200,6 +228,13 @@ header h1 {
     background-color:#F66B0E;
     font-weight: bold;
     color: #F5F5F5;
+}
+
+#addPurchaseBtn:hover {
+    transition: 0.6s;
+    background-color: #E2D784;
+    transform: scale(1.15);
+    color: #062C30;
 }
 
 #backBtn {
@@ -223,6 +258,13 @@ header h1 {
     width: 15%;
 }
 
+#addListBtn:hover {
+    transition: 0.6s;
+    background-color: #E2D784;
+    transform: scale(1.15);
+    color: #062C30;
+}
+
 #listsAccBtn {
     margin: 2rem;
     border-radius: 2rem;
@@ -231,6 +273,13 @@ header h1 {
     background-color:#F66B0E;
     font-weight: bold;
     color: #F5F5F5;
+}
+
+#listsAccBtn:hover {
+    transition: 0.6s;
+    background-color: #E2D784;
+    transform: scale(1.15);
+    color: #062C30;
 }
 
 #usernameTemplate {
@@ -300,7 +349,7 @@ header h1 {
     margin: 1rem;
     padding: 1rem;
     border-radius: 1rem;
-    color: #F66B0E;
+    color: #E2D784;
     width: 80%;
     margin-top: 5rem;
 } 
@@ -317,7 +366,7 @@ header h1 {
     border-radius: 0.2rem;
 }
 
-#otherInput{
+#debtorInput{
     font-size: 2.5rem;
     width: 80%;
     border-radius: 0.2rem;
@@ -410,4 +459,110 @@ header h1 {
 
 .form-control {
     margin: 3rem;
+}
+
+#title1 {
+    color: #F5F5F5;
+    font-size: 3rem;
+}
+
+#title2 {
+    color: #F5F5F5;
+    font-size: 3rem;
+}
+
+#title3 {
+    color: #F5F5F5;
+    font-size: 3rem;
+    margin: 1rem;
+    margin-left: 4rem;
+}
+
+#title4 {
+    background-color: #05595B;
+    color: #E2D784;
+    font-size: 2.5rem;
+    max-width: 50%;
+    margin-left: 3rem;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-bottom: 5rem;
+}
+
+.mainM {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkGreen);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    width: 90%;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 5rem;
+}
+
+.mainM2 {
+    display: flex;
+}
+
+    .st0{fill:#006838;}
+	.st1{font-family:'MyriadPro-Regular';}
+	.st2{font-size:120.3463px;}
+	.st3{font-size:52.4478px;}
+	.st4{fill:#009444;stroke:#000000;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st6{fill:#006838;}
+	.st7{opacity:0.9;fill:#006838;}
+
+.logo {
+    transform: scale(1.5);
+    margin: 3rem;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    
+}
+
+/* @keyframes logo {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+    }
+} */
+
+#logoTitle1{
+    transition: 2s;
+    animation: logoTitle1A 2s linear alternate infinite 2s;
+    fill: #006838;
+}
+
+@keyframes logoTitle1A {
+    0%{
+        opacity: 1;
+        fill: #006838;
+    }
+    100%{
+        opacity: 1;
+        fill: white;
+    }
+}
+
+#logoTitle2{
+    transition: 2s;
+    animation: logoTitle2A 2s linear alternate infinite 2s;
+    fill: #006838;
+}
+
+@keyframes logoTitle2A {
+    0%{
+        opacity: 1;
+        fill: #006838;
+    }
+    100%{
+        opacity: 1;
+        fill: white;
+    }
 }
