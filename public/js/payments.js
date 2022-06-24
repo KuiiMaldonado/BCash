@@ -1,5 +1,5 @@
 const addPaymentBtn = document.getElementById('addPaymentBtn');
-const updatePayment = document.getElementById('addPurchaseBtn');
+const updatePaymentBtn = document.getElementById('addPurchaseBtn');
 
 async function addPaymentHandler(event) {
     event.preventDefault();
@@ -8,11 +8,6 @@ async function addPaymentHandler(event) {
     const amount = parseFloat(document.querySelector('#amountInput').value);
     const debtorId = parseInt(document.querySelector('#debtorInput').value);
     const listId = 'f72125f6-b636-4180-882e-3a8067b8e80a';
-
-    console.log(description);
-    console.log(amount);
-    console.log(debtorId);
-    console.log(listId);
 
     const response = await fetch('/api/payments/', {
         method: 'POST',
@@ -26,4 +21,22 @@ async function addPaymentHandler(event) {
     }
 }
 
+async function updatePaymentHandler(event) {
+    event.preventDefault();
+
+    const paymentId = document.querySelector('#debtorInput').value;
+
+    const response = await fetch('/api/payments/updateStatus', {
+        method: 'PUT',
+        body: JSON.stringify({paymentId}),
+        headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${localStorage.getItem('accessToken')}` },
+    });
+
+    if (response.ok) {
+        alert('Payment updated');
+        window.location.reload();
+    }
+}
+
 addPaymentBtn.addEventListener('click', addPaymentHandler);
+updatePaymentBtn.addEventListener('click', updatePaymentHandler);

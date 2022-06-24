@@ -20,6 +20,21 @@ router.post('/', authenticateToken, async (req, res) => {
    }
 });
 
+//Update payment isPayed status
+router.put('/updateStatus', authenticateToken, async (req, res) => {
+    try {
+        const updatedPayment = await Payment.update( {isPayed: true}, {
+            where: {
+                paymentId: req.body.paymentId,
+            },
+        });
+        res.status(200).json(updatedPayment);
+    } catch (error) {
+        console.log(error);
+        res.status(500).json(error);
+    }
+})
+
 router.get('/listpayments/:id', authenticateToken, async (req, res) => {
     try {
         const payments = await Payment.findAll( {
