@@ -27,52 +27,49 @@
 - [Table of Contents](#table-of-contents)
 - [Bcash](#bcash)
 - [Technology Stack 🚀](#technology-stack-)
-- [Prerequisites 📋](#prerequisites-)
 - [How to Use 🔧](#how-to-use-)
 - [License 📄](#license-)
 - [Contributing 🖇](#contributing-)
 - [User Story 👨🏻‍💻](#user-story-)
-- [Acceptance Criteria 🗂](#acceptance-criteria-)
 <br>
        
        
     
 ## Bcash
-BCash is an app to help you keep track of who you owe and who owes you money in an easy way. Split your tabs and more.
+Let your focus go on enjoying the day, not on keeping accounts
 
+
+Cash Boomerang allows you to effectively keep track of an outing, a trip, a dinner or why not, even stop fighting with your roommates over who should pay how much.
 ## Technology Stack 🚀
 
+* [HTML](https://html.spec.whatwg.org/)
+* [CSS](https://www.w3.org/TR/CSS/#css)
+* [JavaScript](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/)
+* [Node.js](https://nodejs.org/en/)
+* [Dotenv](https://www.npmjs.com/package/dotenv)
+* [Bcrypt](https://www.npmjs.com/package/bcrypt)
+* [Express](http://expressjs.com/)
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-Mira **How-to-Use** para conocer como desplegar el proyecto.
-
-
-## Prerequisites 📋
-
-_Que cosas necesitas para instalar el software y como instalarlas_
-
-```
-Example
-```
 
 ## How to Use 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+The best thing about this is the simple way it works
 
-_Dí cómo será ese paso_
+_You have 5 options in the nav bar, the first one es principal page when you can see the information about de webiste_
 
-```
-Example
-```
+[![image.png](https://i.postimg.cc/PqgNgGYN/image.png)](https://postimg.cc/CZ4F8QvV)
 
-_Y repite_
 
-```
-hasta finalizar
-```
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+_In this tab you can found the user login, you only fill the boxes for login with you account and save your info._
+_If you not are register you can do it clicking in the "Sign Up" bottom_
+
+[![image-1.png](https://i.postimg.cc/mg6PS1rY/image-1.png)](https://postimg.cc/hXT4DjTv)
+
+_In this tab you can see the lists actives with the balance and the others user info_
+
+[![image-2.png](https://i.postimg.cc/25bV9jqP/image-2.png)](https://postimg.cc/PLHXPjQ4)
 
 ## License 📄
 
@@ -81,16 +78,17 @@ Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md
 ## Contributing 🖇
 _People who makes this possible!_
 
-* **AFulanito Detal** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [villanuevand](https://github.com/villanuevand)
-* **AFulanito Detal** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [villanuevand](https://github.com/villanuevand)
-* **AFulanito Detal** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [villanuevand](https://github.com/villanuevand)
+* **Cuitlahuac Maldonado** - *Model* - [KuiiMaldonado](https://github.com/KuiiMaldonado)
+* **Daniel Lago** - *Model* - [Daniel-lago](https://github.com/Daniel-lago)
+* **Edwin Simpson** - *Controllers* - [Edwin0204](https://github.com/Edwin0204)
+* **Alexis García** - *View* - [Lexosaur](https://github.com/lexosaur)
+* **Javier Vargas** - *Controllers* - [JavierVargas97](https://github.com/javiervargas97)
+* **Caro G Taboada** - *Controllers* - [CaroGTaboada](https://github.com/CaroGTaboada)
+* **Arturo Gallegos** - *View* - [ArturoGallegosArana](https://github.com/ArturoGallegosArana)
+* **Daniel Olmedo** - *Model* - [DanOlmedo](https://github.com/DanOlmedo)
+* **David Trujillo** - *View* - [DavidTrujilloR](https://github.com/DavidTrujilloR)
+* **Joaquin Gomez** - *Controllers* - [JoaquinGomez](https://github.com/JoaquinGomez)
 
 ## User Story 👨🏻‍💻
 
-_Explica que verifican estas pruebas y por qué_
-       
-       
-## Acceptance Criteria 🗂
+[![Screen-Shot-2022-06-24-at-23-26-19.png](https://i.postimg.cc/Cx0F2rBv/Screen-Shot-2022-06-24-at-23-26-19.png)](https://postimg.cc/SJZF2rG8)
