@@ -35,6 +35,16 @@ router.put('/updateStatus', authenticateToken, async (req, res) => {
     }
 })
 
+router.get('/', authenticateToken, async (req, res) => {
+    try {
+        const payments = await Payment.findAll();
+        res.status(200).json(payments);
+    }catch (error) {
+        console.log(error);
+        res.status(500).json(error);
+    }
+});
+
 router.get('/listpayments/:id', authenticateToken, async (req, res) => {
     try {
         const payments = await Payment.findAll( {
