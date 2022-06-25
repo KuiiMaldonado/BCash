@@ -27,7 +27,7 @@
 - [Table of Contents](#table-of-contents)
 - [Bcash](#bcash)
 - [Technology Stack 🚀](#technology-stack-)
-- [How to Use 🔧](#how-to-use-)
+- [Preview Page 🔧](#preview-page-)
 - [License 📄](#license-)
 - [Contributing 🖇](#contributing-)
 - [User Story 👨🏻‍💻](#user-story-)
@@ -52,7 +52,7 @@ Cash Boomerang allows you to effectively keep track of an outing, a trip, a dinn
 
 
 
-## How to Use 🔧
+## Preview Page 🔧
 
 The best thing about this is the simple way it works
 
